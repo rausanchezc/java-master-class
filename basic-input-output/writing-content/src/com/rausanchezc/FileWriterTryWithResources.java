@@ -16,6 +16,6 @@ public class FileWriterTryWithResources {
             for (Person attendee: attendees) {
                 attendeesFile.write(attendee.getUuid() +"," +attendee.getFirstName() + "," + attendee.getLastName() + "\n");
             }
-        }o
+        }
     }
 }
