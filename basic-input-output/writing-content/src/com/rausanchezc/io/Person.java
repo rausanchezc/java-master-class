@@ -1,18 +1,16 @@
-package com.rausanchezc;
+package com.rausanchezc.io;
+
+import java.util.UUID;
 
 public class Person {
     private String uuid;
     private String firstName;
     private String lastName;
 
-    Person(String uuid, String firstName, String lastName) {
-        this.uuid = uuid;
+    Person(String firstName, String lastName) {
+        this.uuid = UUID.randomUUID().toString();
         this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
     }
 
     public String getUuid() {
@@ -33,14 +31,5 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    @Override
-    public String toString() {
-        return "Person {" +
-                "uuid='" + uuid + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                '}';
     }
 }

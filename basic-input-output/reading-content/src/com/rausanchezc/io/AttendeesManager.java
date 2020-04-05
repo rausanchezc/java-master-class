@@ -1,4 +1,4 @@
-package com.rausanchezc;
+package com.rausanchezc.io;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
